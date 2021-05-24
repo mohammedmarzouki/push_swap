@@ -6,7 +6,7 @@
 /*   By: mmarzouk <mmarzouk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 22:16:22 by mmarzouk          #+#    #+#             */
-/*   Updated: 2021/05/24 16:00:11 by mmarzouk         ###   ########.fr       */
+/*   Updated: 2021/05/24 16:58:45 by mmarzouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int main(int count,char **input)
 {
     if (count == 0)
-        get_out();
+        get_out((void *)0);
     
 }
