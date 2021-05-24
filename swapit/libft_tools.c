@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   libft_tools.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmarzouk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mmarzouk <mmarzouk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/28 21:41:53 by mmarzouk          #+#    #+#             */
-/*   Updated: 2019/10/28 21:41:55 by mmarzouk         ###   ########.fr       */
+/*   Created: 2021/05/24 16:01:11 by mmarzouk          #+#    #+#             */
+/*   Updated: 2021/05/24 16:02:39 by mmarzouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "swapit.h"
 
-void	ft_putstr_fd(char *s, int fd)
+long    ft_strlen(const char *str)
 {
-	int i;
+	long i;
 
 	i = 0;
-	if (s)
+	while (str && str[i])
+		i++;
+	return (i);
+}
+
+void	ft_putstr(char *s)
+{
+	while (s && *s)
 	{
-		while (s[i] != '\0')
-		{
-			ft_putchar_fd(s[i], fd);
-			i++;
-		}
+		write(1, &*s, 1);
+		s++;
 	}
+}
+
+int	ft_isdigit(int a)
+{
+	if (a >= '0' && a <= '9')
+		return (1);
+	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmarzouk <mmarzouk@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: mmarzouk <mmarzouk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 22:16:22 by mmarzouk          #+#    #+#             */
-/*   Updated: 2021/05/20 22:27:33 by mmarzouk         ###   ########.fr       */
+/*   Updated: 2021/05/24 16:00:11 by mmarzouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 int main(int count,char **input)
 {
     if (count == 0)
-    {
-        ft_putstr_fd("there are no args \n", 1);
-        
-    }
+        get_out();
+    
 }
